@@ -147,7 +147,7 @@
     margin: 50px auto;
     max-width: 540px;
   }
-  .fact-description{
+  .sponsor-description{
     font-size: 1rem;
     font-weight: 400;
   }
@@ -162,8 +162,15 @@
     .nav-bar, .nav-links, .teams{
         flex-direction: column;
     }
-    .teams-image{
+    .teams-image,
+    .facts-container,
+    .companies-images{
       grid-template-columns: repeat(1, 1fr);
+    }
+    .companies-images{
+      gap: 100px;
+      max-width: 80%;
+      margin: 0px auto;
     }
   }
   /* responsive media quary for medium device  */
