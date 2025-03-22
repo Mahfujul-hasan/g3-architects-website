@@ -15,6 +15,8 @@
   }
   .dark-2{
     color: #424242;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   .display-flex{
@@ -147,19 +149,75 @@
     margin: 50px auto;
     max-width: 540px;
   }
-  .sponsor-description{
-    font-size: 1rem;
-    font-weight: 400;
-  }
+  
   .companies-images{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%);
   }
+  /* Features section styles  */
+  .features-will{
+    justify-content: space-between;
+    gap: 145px;
+  }
+  .feature-column{
+    max-width: 585px;
+  }
+  #features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+  }
+  
+  .features-card{
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  .card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .feature-card-images>img{
+    width: 100%;
+    
+  }
+  .feature-card-images{
+    position: relative;
+  }
+  .experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  #experience-btn{
+    padding: 45px 42px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 458px;
+    top: 860px;
+    
+  }
+  /* footer section styles  */
+  .footer-section{
+    max-width: 1440px;
+    text-align: center;
+    padding: 40px 0px;
+    margin: 100px auto;
+  }
+  .footer-section>p{
+    font-size: 1.25rem;
+  }
+
 
   /* responsive media quary for small device */
   @media screen and (max-width: 576px) {
-    .nav-bar, .nav-links, .teams{
+    .nav-bar, 
+    .nav-links, 
+    .teams,
+    .features-will{
         flex-direction: column;
     }
     .teams-image,
@@ -172,12 +230,33 @@
       max-width: 80%;
       margin: 0px auto;
     }
-  }
-  /* responsive media quary for medium device  */
-  @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
-      flex-direction: column;
+    #experience-btn{
+      position: static;
+      margin-top: 50px;
     }
     
   }
+  /* responsive media quary for medium device  */
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams,
+    .features-will{
+      flex-direction: column;
+    }
+    .facts-container,
+    .companies-images{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .companies-images{
+      gap: 100px;
+      max-width: 80%;
+      margin: 0px auto;
+    
+    }
+    .some-facts>.section-title,.fact-description{
+      margin-left: 30px;
+    }
+    .features-will{
+      margin-left: 30px;
+    }
 
+  }
